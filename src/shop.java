@@ -51,7 +51,7 @@ public class shop {
 	System.out.println("Press 13 for Jogoo");
 	System.out.println("Press 14 for EXE");
 	System.out.println("Press 15 for TAIFA");
-	System.out.println("Kindly separate the numbers with spaces ");
+	System.out.println("For multiple products separate the numbers with spaces ");
 	 
 	
 	 Scanner num = new Scanner(System.in);
