@@ -1,12 +1,12 @@
 import java.util.Scanner;
 public class shop {
 	
- public void main(String[] args) {
+ public static void main(String[] args) {
 	 
 	 String[] products ={"Maize","Rice","Sorghum","Oats","Millet","Soda","Milk","Water","Kales","Spinach"
 			 ,"Cabbage","Jembe","Jogoo","EXE","Taifa"};
 	 int[] prices = {20,100,120,235,145,75,102,20,40,50,65,98,88,123,120};
-	 int[] half = {null, 50, 60, 118, 73, null, null, null, null, null, null, null, 17, 31, 30}
+	
 	/*System.out.println("List of Available Items");
 	System.out.println("");
 	System.out.println("Cereals");
@@ -53,13 +53,17 @@ public class shop {
 	System.out.println("Press 15 for TAIFA");
 	System.out.println("Kindly separate the numbers with spaces ");
 	 
-
 	
-	 
-	 
-
 	 Scanner num = new Scanner(System.in);
 	 String rawInput = num.nextLine();
+	 String[] items = rawInput.split("\\s+");
+	 
+	 for(int i = 0; i< items.length; i++ ){
+		 Object product = products[(Integer.parseInt(items[i])-1)];
+		 Object price = prices[(Integer.parseInt(items[i])-1)];
+		System.out.println(product + "\t" + "\t" + price);
+	 }
+		 
 	 
  }
 
