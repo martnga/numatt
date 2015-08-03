@@ -3,10 +3,10 @@ public class shop {
 	
  public void main(String[] args) {
 	 
-	 String products[] ={"Maize","Rice","Sorghum","Oats","Millet","Soda","Milk","Water","Kales","Spinach"
+	 String[] products ={"Maize","Rice","Sorghum","Oats","Millet","Soda","Milk","Water","Kales","Spinach"
 			 ,"Cabbage","Jembe","Jogoo","EXE","Taifa"};
-	 int prices[] ={20,100,120,235,145,75,102,20,40,50,65,98,88,123,120};
-	
+	 int[] prices = {20,100,120,235,145,75,102,20,40,50,65,98,88,123,120};
+	 int[] half = {null, 50, 60, 118, 73, null, null, null, null, null, null, null, 17, 31, 30}
 	/*System.out.println("List of Available Items");
 	System.out.println("");
 	System.out.println("Cereals");
